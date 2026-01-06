@@ -202,7 +202,7 @@ h2 {
     overflow-x: auto;
     overflow-y: hidden;
     padding-bottom: 10px;
-    touch-action: pan-x;
+    touch-action: pan-x pan-y;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE/Edge */
 }
@@ -327,7 +327,7 @@ h2 {
 .guitar-container {
     overflow-x: auto;
     padding-bottom: 10px;
-    touch-action: pan-x;
+    touch-action: pan-x pan-y;
     position: relative;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE/Edge */
