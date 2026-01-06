@@ -181,11 +181,6 @@ h1 {
     cursor: pointer;
     transition: background 0.2s;
 }
-
-.scroll-slider::-webkit-slider-thumb:hover {
-    background: var(--primary);
-}
-
 .scroll-slider::-moz-range-thumb {
     width: 16px;
     height: 16px;
@@ -194,10 +189,6 @@ h1 {
     border-radius: 50%;
     cursor: pointer;
     transition: background 0.2s;
-}
-
-.scroll-slider::-moz-range-thumb:hover {
-    background: var(--primary);
 }
 
 h2 {
