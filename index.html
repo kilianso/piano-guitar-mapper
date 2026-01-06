@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive piano-to-guitar note mapper — click piano keys to see and hear matching guitar fretboard positions.">
+    <meta property="og:title" content="Piano to Guitar Mapper">
+    <meta property="og:description" content="Interactive piano-to-guitar note mapper — click piano keys to see and hear matching guitar fretboard positions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kilianso.com/piano-guitar-mapper">
+    <meta property="og:image" content="https://kilianso.com/piano-guitar-mapper/image.png">
+    <meta name="twitter:card" content="summary">
+    <title>Piano to Guitar Note Mapper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Piano to Guitar Mapper</h1>
+            <div class="controls">
+                <div class="toggle-container">
+                    <span class="toggle-label">Show pitch</span>
+                    <div class="toggle-switch" id="octaveToggle"></div>
+                </div>
+                <div class="toggle-container">
+                    <span class="toggle-label">Show flats</span>
+                    <div class="toggle-switch" id="flatToggle"></div>
+                </div>
+            </div>
+            <div class="note-info">
+                <div class="note-title" id="infoTitle">Play a note</div>
+                <div class="note-description" id="noteInfo">Click a note to hear and see where it appears.</div>
+            </div>
+        </header>
+        
+        <div class="instrument-section piano-section">
+            <h2>Piano Keyboard</h2>
+            <div class="piano-container">
+                <div class="piano" id="piano"></div>
+            </div>
+        </div>
+
+        <div class="scroll-slider-container">
+            <input type="range" class="scroll-slider" id="scrollSlider" min="0" max="100" value="0">
+        </div>
+
+        <div class="instrument-section guitar-section">
+            <div class="guitar-header">
+                <h2>Guitar Fretboard</h2>
+            </div>
+            <div class="guitar-container">
+                <div class="fret-numbers" id="fretNumbers"></div>
+                <div class="guitar" id="guitar"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="toggle-container footer-toggle">
+                <span class="toggle-label" aria-hidden="true">🌞</span>
+                <div class="toggle-switch" id="themeToggle" aria-label="Toggle dark mode"></div>
+                <span class="toggle-label" aria-hidden="true">🌙</span>
+            </div>
+            <span>Made with 🤘 by <a href="https://x.com/kilian_so" target="_blank" rel="noopener noreferrer">kilianso</a></span>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
